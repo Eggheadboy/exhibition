@@ -319,8 +319,11 @@ var settings = {
 		const scrollPositionY = window.pageYOffset;
 		const people = document.querySelector('#people');
 		const peopleMoveSpeed = Number(people.dataset.speed);
+		const word = document.querySelector('#word');
+		const wordMoveSpeed = Number(word.dataset.speed);
 		
 		people.style.transform = `translateY(${scrollPositionY * peopleMoveSpeed}px)`;
+		word.style.transform = `translateY(${scrollPositionY * wordMoveSpeed}px)`;
 
 		var $backheight = $(".backu").outerHeight(),
 			$peopleheight = $("#people").outerHeight(),
@@ -328,8 +331,8 @@ var settings = {
 
 		let elem = document.querySelector('.backu');
 		let rect = elem.getBoundingClientRect();
-		let peopleelem = document.querySelector('#people');
-		let peoplerect = peopleelem.getBoundingClientRect();
+		/*let peopleelem = document.querySelector('#people');
+		let peoplerect = peopleelem.getBoundingClientRect();*/
 		let vpheight = window.innerHeight;
 		let changer = ($backheight) - (-(rect.y));
 		if (changer < vpheight) {
@@ -337,6 +340,12 @@ var settings = {
 		}
 		else {
 			people.dataset.speed = 1;
+		}
+		if (changer < vpheight*2) {
+			word.dataset.speed = 0;
+		}
+		else {
+			word.dataset.speed = 1;
 		}
 		
 	});
