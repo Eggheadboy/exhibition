@@ -25,6 +25,7 @@ var settings = {
 
 };
 
+
 (function($) {
 
 	skel.breakpoints({
@@ -335,17 +336,18 @@ var settings = {
 		let peoplerect = peopleelem.getBoundingClientRect();*/
 		let vpheight = window.innerHeight;
 		let changer = ($backheight) - (-(rect.y));
+		console.log(changer);
 		if (changer < vpheight) {
 			people.dataset.speed = 0;
 		}
 		else {
 			people.dataset.speed = 1;
 		}
-		if (changer < vpheight*2) {
-			word.dataset.speed = 0;
+		if (changer < vpheight*3) {
+			word.style.opacity = (changer-vpheight*2)/vpheight;
 		}
 		else {
-			word.dataset.speed = 1;
+			
 		}
 		
 	});
