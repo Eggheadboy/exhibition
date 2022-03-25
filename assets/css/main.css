@@ -4334,7 +4334,7 @@
 			padding: 0;
 			display: block;
 			box-sizing: border-box;
-			z-index: 2;
+			z-index: 0;
 		}
 		@media screen and (max-width: 500px) {
 
@@ -4380,7 +4380,6 @@
 				top: 15vh;
 			}
 		}
-
 
 /* Main */
 

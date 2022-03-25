@@ -332,23 +332,30 @@ var settings = {
 
 		let elem = document.querySelector('.backu');
 		let rect = elem.getBoundingClientRect();
-		/*let peopleelem = document.querySelector('#people');
-		let peoplerect = peopleelem.getBoundingClientRect();*/
+		let peopleelem = document.querySelector('#people');
+		let peoplerect = peopleelem.getBoundingClientRect();
 		let vpheight = window.innerHeight;
 		let changer = ($backheight) - (-(rect.y));
-		console.log(changer);
+		//console.log(changer);
 		if (changer < vpheight) {
-			people.dataset.speed = 0;
+			/*people.dataset.speed = 0;
+			peoplerect.y = (peoplerect.y) - (rect.y) ;
+			people.style.transform = `translateY(${scrollPositionY}px)`;*/
+			
 		}
 		else {
 			people.dataset.speed = 1;
 		}
-		if (changer < vpheight*3) {
-			word.style.opacity = (changer-vpheight*2)/vpheight;
+		if (changer < vpheight*3 && changer > vpheight*1.5) {
+			word.style.opacity = (changer-vpheight*1.5)/vpheight;
+		}
+		else if (changer >= vpheight*3){
+			word.style.opacity = 1;
 		}
 		else {
-			
+			word.style.opacity = 0;
 		}
+		console.log(rect.y);
 		
 	});
 
