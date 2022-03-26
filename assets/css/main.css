@@ -4335,6 +4335,7 @@
 			display: block;
 			box-sizing: border-box;
 			z-index: 0;
+			opacity: 1;
 		}
 		@media screen and (max-width: 500px) {
 
@@ -4382,15 +4383,14 @@
 		}
 
 		#about-slide {
-			background-color: #140404;
+			/*background-color: #140404;*/
     		color: #fff;
-			z-index: 1;
 		}
 		.carousel-item{
-			height:400px;
+			height:90vh;
 		}
 		.carousel-caption{
-			margin-bottom: 30px;
+			margin-bottom: 5vh;
 		}
 		@media(max-width: 768px){
 			#myCarousel .display-4{

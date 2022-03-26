@@ -337,16 +337,20 @@ var settings = {
 		let vpheight = window.innerHeight;
 		let changer = ($backheight) - (-(rect.y));
 		//console.log(changer);
-		if (changer < vpheight) {
+		/*if (changer < vpheight) {
 			/*people.dataset.speed = 0;
 			peoplerect.y = (peoplerect.y) - (rect.y) ;
-			people.style.transform = `translateY(${scrollPositionY}px)`;*/
-			
+			people.style.transform = `translateY(${scrollPositionY}px)`;
 		}
 		else {
 			people.dataset.speed = 1;
+		}*/
+		if (changer >= 0 && changer < vpheight ) {
+			people.style.opacity = (changer)/vpheight;
+			people.style.zIndex = '0';
+			word.style.zIndex = '2';
 		}
-		if (changer < 0) {
+		else if (changer < 0) {
 			people.style.opacity = 0;
 			people.style.zIndex = '-100';
 			word.style.zIndex = '-100';
@@ -365,7 +369,7 @@ var settings = {
 		else {
 			word.style.opacity = 0;
 		}
-		console.log(rect.y);
+		console.log(changer);
 		
 	});
 
