@@ -346,6 +346,16 @@ var settings = {
 		else {
 			people.dataset.speed = 1;
 		}
+		if (changer < 0) {
+			people.style.opacity = 0;
+			people.style.zIndex = '-100';
+			word.style.zIndex = '-100';
+		}
+		else {
+			people.style.opacity = 1;
+			people.style.zIndex = '0';
+			word.style.zIndex = '2';
+		}
 		if (changer < vpheight*3 && changer > vpheight*1.5) {
 			word.style.opacity = (changer-vpheight*1.5)/vpheight;
 		}
@@ -358,5 +368,7 @@ var settings = {
 		console.log(rect.y);
 		
 	});
+
+
 
 })(jQuery);
