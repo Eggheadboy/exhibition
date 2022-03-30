@@ -346,7 +346,7 @@ var settings = {
 			people.dataset.speed = 1;
 		}*/
 		if (changer >= 0 && changer < vpheight ) {
-			people.style.opacity = (changer)/vpheight;
+			/*people.style.opacity = (changer)/vpheight;*/
 			people.style.zIndex = '0';
 			word.style.zIndex = '2';
 		}
@@ -360,6 +360,9 @@ var settings = {
 			people.style.zIndex = '0';
 			word.style.zIndex = '2';
 		}
+		if (changer >= 0 && changer < vpheight*1.5 ) {
+			people.style.opacity = (changer-vpheight*0.5)/vpheight;
+		}
 		if (changer < vpheight*3 && changer > vpheight*1.5) {
 			word.style.opacity = (changer-vpheight*1.5)/vpheight;
 		}
@@ -369,7 +372,7 @@ var settings = {
 		else {
 			word.style.opacity = 0;
 		}
-		console.log(changer);
+		//console.log(changer);
 		
 	});
 

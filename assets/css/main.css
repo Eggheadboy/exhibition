@@ -4318,9 +4318,8 @@
 		width:100%;
 		display: block;
 		box-sizing: border-box;
-		
 	}
-		.banscroll > .backu {
+		.banscroll .backu {
 			margin: 0 auto;
 			padding: 0;
 			width: 100%;
