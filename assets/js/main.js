@@ -363,10 +363,10 @@ var settings = {
 		if (changer >= 0 && changer < vpheight*1.5 ) {
 			people.style.opacity = (changer-vpheight*0.5)/vpheight;
 		}
-		if (changer < vpheight*3 && changer > vpheight*1.5) {
-			word.style.opacity = (changer-vpheight*1.5)/vpheight;
+		if (changer < vpheight*4 && changer > vpheight*2) {
+			word.style.opacity = (changer-vpheight*2)/vpheight;
 		}
-		else if (changer >= vpheight*3){
+		else if (changer >= vpheight*4){
 			word.style.opacity = 1;
 		}
 		else {
