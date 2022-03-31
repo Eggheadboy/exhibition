@@ -336,6 +336,8 @@ var settings = {
 		let peoplerect = peopleelem.getBoundingClientRect();
 		let vpheight = window.innerHeight;
 		let changer = ($backheight) - (-(rect.y));
+
+		let one = document.querySelector('#one');
 		//console.log(changer);
 		/*if (changer < vpheight) {
 			/*people.dataset.speed = 0;
@@ -360,6 +362,13 @@ var settings = {
 			people.style.zIndex = '0';
 			word.style.zIndex = '2';
 		}
+		/*if (changer = vpheight ) {
+			$("html,body").animate({scrollTop: $(one).offset().top},1000);
+			$("html,body").animate(stop());
+		}
+		else {
+			
+		}*/
 		if (changer >= 0 && changer < vpheight*1.5 ) {
 			people.style.opacity = (changer-vpheight*0.5)/vpheight;
 		}

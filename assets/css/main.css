@@ -4385,6 +4385,30 @@
 			/*background-color: #140404;*/
     		color: #fff;
 		}
+		#about-slide h2 {
+			margin-bottom: 5rem;
+			margin-top: 2rem;
+		}
+		#about-slide header p {
+			text-transform: uppercase;
+			font-size: .75rem;
+			font-weight: 300;
+			margin: 0 0 .25rem 0;
+			padding: 0 0 .75rem 0;
+			letter-spacing: .25rem;
+		}
+	
+			#about-slide header p:after {
+				content: '';
+				position: absolute;
+				margin: auto;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 50%;
+				height: 1px;
+				background-color: rgba(0, 0, 0, 0.125);
+			}
 		.carousel-item{
 			height:90vh;
 		}
@@ -4413,6 +4437,69 @@
 				font-weight: 200; 
 			}
 		}
+
+/*info */
+	.inner .infotitle {
+		font-size: 26px;
+		font-weight:bolder;
+		line-height:2;
+		color:rgba(41, 148, 255, 0.975);
+		padding: 2rem;
+	}
+	@media screen and (max-width: 500px) {
+		.inner .infoword {
+			font-size: 18px;
+		}
+	}
+	@media screen and (min-width: 501px) and (max-width: 736px) {
+		.inner .infoword {
+			font-size: 22px;
+		}
+	}
+	.inner .infopict {
+		margin: 0 auto;
+		padding: 0;
+		width: 50%;
+		box-sizing: border-box;
+		display: block;
+		position: relative;
+	}
+	.inner header p {
+		text-transform: uppercase;
+		font-size: .75rem;
+		font-weight: 300;
+		margin: 0 0 .25rem 0;
+		padding: 0 0 .75rem 0;
+		letter-spacing: .25rem;
+	}
+
+		.inner header p:after {
+			content: '';
+			position: absolute;
+			margin: auto;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 50%;
+			height: 1px;
+			background-color: rgba(0, 0, 0, 0.125);
+		}
+	.inner .infoword {
+		padding: 0 2rem 2rem 2rem;
+		color:#000;
+		line-height:1.5;
+		font-size: 22px;
+	}
+	@media screen and (max-width: 500px) {
+		.inner .infoword {
+			font-size: 16px;
+		}
+	}
+	@media screen and (min-width: 501px) and (max-width: 736px) {
+		.inner .infoword {
+			font-size: 20px;
+		}
+	}
 
 /* Main */
 
