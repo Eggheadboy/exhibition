@@ -362,12 +362,12 @@ var settings = {
 			people.style.zIndex = '0';
 			word.style.zIndex = '2';
 		}
-		/*if (changer = vpheight ) {
-			$("html,body").animate({scrollTop: $(one).offset().top},1000);
-			$("html,body").animate(stop());
-		}
-		else {
-			
+		/*if (changer = 0 ) {
+			//$("html,body").animate({scrollTop: $(one).offset().top},1000);
+			//$("html,body").animate(stop());
+			//$("html,body").style.overflow='hidden';
+			//await delay(1);
+			//$("html,body").style.overflow='auto';
 		}*/
 		if (changer >= 0 && changer < vpheight*1.5 ) {
 			people.style.opacity = (changer-vpheight*0.5)/vpheight;

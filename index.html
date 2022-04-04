@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -50,7 +51,8 @@
 			</section>
 
 		<!-- info -->
-			<section id="AB" class="wrapper style2">
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<section id="info" class="wrapper style2">
 				<div class="inner">
 					<header class="align-center" style="padding-bottom:2rem;">
 						<h2>展覽資訊</h2>
@@ -58,9 +60,9 @@
 					</header>
 					<div class="grid-style">
 						<div class="box">
-							<div class="infotitle">國立臺中教育大學<br />第13屆數位系聯展​暨E-portfolio競賽</div>
-							<div class="infoword">世界上有很多事情是無法說出口的，羞於說的，想卻不敢說的，不想說的，不被允許說的，不該說的又或者是想說卻傳達不到的，最終都將化為不被他人所知曉的一場沉默。</div>
-							<div class="infoword">這可能是一個不想被別人知道的小秘密，又或是一股埋藏內心的情感。最終是因沒說出口而逃過一劫，還是造成一場挽救不回的遺憾。請以沉默為主題敘述曾經的那些未曾被傳達出去的故事吧!</div>
+							<div data-aos="zoom-in-right" class="infotitle">國立臺中教育大學<br />第13屆數位系聯展​暨E-portfolio競賽</div>
+							<div data-aos="zoom-in-right" class="infoword">世界上有很多事情是無法說出口的，羞於說的，想說卻不敢說的，不想說的，不被允許說的，不該說的又或者是想說卻傳達不到的，最終都將化為不被他人所知曉的一場沉默。</div>
+							<div data-aos="zoom-in-right" class="infoword">這可能是一個不想被別人知道的小秘密，又或是一股埋藏內心的情感。最終是因沒說出口而逃過一劫，還是造成一場挽救不回的遺憾。請以沉默為主題敘述曾經的那些未曾被傳達出去的故事吧!</div>
 						</div>
 						<div class="box">
 							<div class="image fit">
@@ -116,8 +118,8 @@
 				</div>
 			</section>-->
 
-		<!-- Two -->
-			<section id="two" class="wrapper style2">
+		<!-- photo -->
+			<section id="photo" class="wrapper style2">
 				<div id="about-slide">
 					<header class="align-center">
 						<p></p>
@@ -152,10 +154,13 @@
 						</div>
 					</div>
 				</div>
+					<footer class="align-center" style="padding-top: 2rem;">
+						<a href="#" class="button alt">點我看所有作品詳細介紹</a>
+					</footer>
 				</div>
 			</section>
 
-		<!-- Three -->
+		<!-- Three 
 			<section id="three" class="wrapper style2">
 				<div class="inner">
 					<header class="align-center">
@@ -186,6 +191,7 @@
 					</div>
 				</div>
 			</section>
+		-->
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -239,6 +245,8 @@
 					}
 				]
 				});
+
+    			AOS.init();
 			</script>
 
 	</body>
