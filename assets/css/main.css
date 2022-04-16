@@ -18,6 +18,9 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+	html {
+		overflow-y: overlay;
+	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -4806,4 +4809,25 @@
 }
 .slick-next {
 	right: -25px !important;
+}
+
+/* 網頁捲軸【寬度】 */
+::-webkit-scrollbar {
+	width: 10px;
+}
+  
+/* 網頁捲軸【背景】顏色*/
+::-webkit-scrollbar-track-piece {
+	background: rgba(41, 148, 255, 0);
+}
+  
+/* 網頁捲軸【把手】顏色 */
+::-webkit-scrollbar-thumb {
+	background: rgba(41, 148, 255, 1);
+	border-radius: 10px;
+}
+  
+/* 網頁捲軸【滑過時】把手的顏色 */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(162, 208, 255);
 }
