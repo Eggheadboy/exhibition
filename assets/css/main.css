@@ -4597,10 +4597,10 @@
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-.pA {
+.eA {
 	background: #FFF;
 }
-.pB{
+.eB{
 	background: #C4E1FF;
 }
 
@@ -4753,6 +4753,39 @@
 			}
 		}
 
+/*vote*/
+	.vote {
+		margin-bottom: 1rem;
+		border-radius: 10px;
+		padding: 0.5rem;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.vA {
+		background: #FFF;
+	}
+	.vB{
+		background: #C4E1FF;
+	}
+
+		.vote .content {
+			width: 100%;
+			padding: 2rem;
+		}
+			.vote .content h2 {
+				font-weight: 500;
+			}
+		.vote .form {
+			width: 100%;
+			height: 90vh;
+		}
+
 /* Main */
 
 	#main {
@@ -4812,22 +4845,27 @@
 }
 
 /* 網頁捲軸【寬度】 */
-::-webkit-scrollbar {
-	width: 10px;
+::-webkit-scrollbar , iframe::-webkit-scrollbar{
+	width: 20px;
 }
   
 /* 網頁捲軸【背景】顏色*/
-::-webkit-scrollbar-track-piece {
+::-webkit-scrollbar-track-piece , iframe::-webkit-scrollbar-track-piece{
 	background: rgba(41, 148, 255, 0);
 }
   
 /* 網頁捲軸【把手】顏色 */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb , iframe::-webkit-scrollbar-thumb{
+	border: 5px solid rgba(0, 0, 0, 0);
 	background: rgba(41, 148, 255, 1);
 	border-radius: 10px;
+	background-clip: padding-box;
 }
   
 /* 網頁捲軸【滑過時】把手的顏色 */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover , iframe::-webkit-scrollbar-thumb:hover{
 	background: rgb(162, 208, 255);
+	border: 4px solid rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	background-clip: padding-box;
 }
