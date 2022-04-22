@@ -189,6 +189,8 @@
 
 		.container {
 			width: 90% !important;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
 		}
 
 	}
@@ -215,6 +217,8 @@
 
 		.container {
 			width: 90% !important;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
 		}
 
 	}
@@ -4581,6 +4585,11 @@
 		}
 			.paint .content h2 {
 				font-weight: 500;
+			}
+			.paint .content p {
+				font-weight: 300;
+				color:#000000;
+				font-size: 16px;
 			}
 
 /*eportfolio*/
