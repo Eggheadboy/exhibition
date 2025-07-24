@@ -4764,14 +4764,14 @@
 			width: calc(100%/3);
 		}
 			.we .shortA img {
-				width: 50%;
+				width: 70%;
 				border-radius: 100%;
 			}
 		.we .shortB {
 			width: calc(100%/4);
 		}
 			.we .shortB img {
-				width: 70%;
+				width: 90%;
 				border-radius: 100%;
 			}
 		.we .weintro {
@@ -4812,46 +4812,6 @@
 				font-size: 20px;
 			}
 		}
-
-/*past*/
-.past {
-	margin-bottom: 1rem;
-	border-radius: 10px;
-	padding: 1rem;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-moz-flex-wrap: wrap;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-	.palink {
-		width: calc((100%)/5);
-	}
-	@media screen and (max-width:736px) {
-		.palink {
-			width: 100%;
-		}
-	}
-	@media screen and (min-width:737px) and (max-width:980px) {
-		.palink {
-			width: calc((100%)/3);
-		}
-	}
-	.palink a {
-		width: 80%;
-	}
-	@media screen and (max-width:500px) {
-		.palink a {
-			width: 100%;
-			
-		}
-	}
-	.palink > .button.alt {
-		margin-bottom: 1rem;
-	}
 
 /*vote*/
 	.vote {
